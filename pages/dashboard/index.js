@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { CountCard } from './components/CountCard'
+import { ChartCard } from './components/ChartCard'
 
 import * as S from './styles'
 
@@ -31,14 +32,32 @@ const mockedCountCardsData = [
   },
 ]
 
+const mockedChartsData = [
+  {
+    title: 'Orders chart',
+    children: <p>Add chart 1 here</p>
+  },
+  {
+    title: 'Products chart',
+    children: <p>Add chart 2 here</p>
+  }
+]
+
 const Dashboard = () => {
   return (
     <>
-      <S.CountCards>
+      <S.Cards>
         {mockedCountCardsData?.map((card) =>
           <CountCard value={card.value} message={card.message} />
         )}
-      </S.CountCards>
+      </S.Cards>
+      <S.Cards>
+        {mockedChartsData?.map((card) =>
+          <ChartCard title={card.title}>
+            {card.children}
+          </ChartCard>
+        )}
+      </S.Cards>
     </>
   )
 }

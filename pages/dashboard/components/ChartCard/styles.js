@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   border: 2px solid #F0F0F0;
   border-radius: 6px;
   background-color: #FFF;
-  flex: calc(33% - 4rem) 0 0;
+  flex: calc(50% - 4em) 0 0;
 `
 
 export const Title = styled.h2`
@@ -16,8 +16,6 @@ export const Title = styled.h2`
   font-weight: normal;
 `
 
-export const Value = styled.p`
-  margin: 0;
-  color: #132239;
-  font-size: 24px;
+export const Children = styled.div`
+  margin-top: 1em;
 `
