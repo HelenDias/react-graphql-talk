@@ -18,5 +18,5 @@ export const Title = styled.h2`
 
 export const Children = styled.div`
   margin-top: 1em;
-  max-height: 300px;
+  height: 300px;
 `
