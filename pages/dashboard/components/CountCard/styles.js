@@ -9,10 +9,11 @@ export const Wrapper = styled.div`
   flex: calc(33% - 4rem) 0 0;
 `
 
-export const Text = styled.p`
+export const Title = styled.h2`
   margin: 0;
   color: #7e8693;
   font-size: 16px;
+  font-weight: normal
 `
 
 export const Value = styled.p`
