@@ -9,27 +9,27 @@ import * as S from './styles'
 const mockedCountCardsData = [
   {
     value: 67.132,
-    message: 'Orders'
+    title: 'Orders'
   },
   {
     value: 50.872,
-    message: 'Products'
+    title: 'Products'
   },
   {
     value: 945,
-    message: 'Categories'
+    title: 'Categories'
   },
   {
     value: 67.132,
-    message: 'Orders'
+    title: 'Orders'
   },
   {
     value: 50.872,
-    message: 'Products'
+    title: 'Products'
   },
   {
     value: 945,
-    message: 'Categories'
+    title: 'Categories'
   },
 ]
 
@@ -39,7 +39,7 @@ const Dashboard = () => {
     <S.Wrapper>
       <S.Cards>
         {mockedCountCardsData?.map((card) =>
-          <CountCard value={card.value} message={card.message} />
+          <CountCard value={card.value} title={card.title} />
         )}
       </S.Cards>
       <S.Cards>

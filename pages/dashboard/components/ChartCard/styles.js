@@ -14,6 +14,12 @@ export const Title = styled.h2`
   color: #7e8693;
   font-size: 16px;
   font-weight: normal;
+  text-align: center;
+`
+
+export const HorizontalLine = styled.hr`
+  margin-top: 1em;
+  border-top: 1px solid #F0F0F0;
 `
 
 export const Children = styled.div`
